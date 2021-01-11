@@ -1,5 +1,12 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global">
-<div class="slds-card slds-p-around_large">
+
+<aura:attribute name="logicOptions" type="List" default=""></aura:attribute>
+
+<aura:attribute name="timeOptions" type="List" default=""></aura:attribute>
+
+<aura:attribute name="operationOptions" type="List" default=""></aura:attribute>
+
+<div class="slds-card slds-p-around_large slds">
 <div class="slds-expression">
 <h2 class="slds-expression__title">Conditions</h2>
 <div class="slds-expression__options">
