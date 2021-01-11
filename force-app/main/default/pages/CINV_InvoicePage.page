@@ -44,7 +44,7 @@ standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" action="{!
           background-color: #0e0d0d;
         }
         body{
-            background-color:rgb(56, 226, 21);background-blend-mode:lighten ; 
+            background-color:white ; 
         }
        
       
