@@ -1,10 +1,22 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global">
 
-<aura:attribute name="logicOptions" type="List" default=""></aura:attribute>
+<aura:attribute name="logicOptions" type="List" default="[
+                                                          {'label':'All conditions are met','value':'all'},
+                                                          {'label':'Any condition is met','value':'any'},
+                                                          {'label':'Custom logic is met','value':'custom'},
+                                                          ]"></aura:attribute>
 
-<aura:attribute name="timeOptions" type="List" default=""></aura:attribute>
+<aura:attribute name="timeOptions" type="List" default="[
+                                                          {'label':'Month','value':'month'},
+                                                          {'label':'Day','value':'day'},
+                                                          {'label':'Hour','value':'hour'},
+                                                          ]"></aura:attribute>
 
-<aura:attribute name="operationOptions" type="List" default=""></aura:attribute>
+<aura:attribute name="operationOptions" type="List" default="[
+                                                                {'label':'Is Equal To','value':'equal'},
+                                                                {'label':'Is Before','value':'before'},
+                                                                {'label':'Is After','value':'after'},
+                                                                ]"></aura:attribute>
 
 <div class="slds-card slds-p-around_large slds">
 <div class="slds-expression">
