@@ -1,4 +1,5 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global">
+<div class="slds-card slds-p-around_large">
 <div class="slds-expression">
 <h2 class="slds-expression__title">Conditions</h2>
 <div class="slds-expression__options">
@@ -235,6 +236,7 @@
     <!--  <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
        </svg> -->Add Group</button>
+</div>
 </div>
 </div>
 </aura:component>	
