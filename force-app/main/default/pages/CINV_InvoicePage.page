@@ -75,10 +75,10 @@ standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" action="{!
                
               </tr>
               <tr>
-                    <td  style="background-color:rgb(41, 159, 238);background-blend-mode:lighten ;" >Billing Adress</td>
+                    <td  style="background-color:rgb(41, 159, 238);" >Billing Adress</td>
                     <td></td>
-                    <td ></td>
-                    <td></td>
+                    <td style="background-color:rgb(41, 159, 238);">Customer Id</td>
+                    <td style="background-color:rgb(41, 159, 238);">Terms</td>
                    
               </tr>
               <tr>
@@ -91,7 +91,7 @@ standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" action="{!
                         SWIFT: BZEKILIM<br/>
                         </td>
                     <td></td>
-                    <td ></td>
+                    <td >{!invoice.Bill_To__r.Id}</td>
                     <td></td>
                  
               </tr>

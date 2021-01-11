@@ -4,7 +4,8 @@ public with sharing class CINV_InvoiceController {
     public CINV_InvoiceController(ApexPages.StandardController controller) {
         invoice=(Invoice__c)controller.getRecord();
         invoice=[select id,name,date__c,Bill_To__r.name,Bill_To__r.BillingStreet,Bill_To__r.BillingCity
-        ,Bill_To__r.BillingCountry,Bill_To__r.BillingPostalCode,Bill_To__r.Phone,days__c,AMOUNT__c,Unit_price__c,description__c
+        ,Bill_To__r.BillingCountry,Bill_To__r.BillingPostalCode,Bill_To__r.Phone,days__c,Bill_To__r.Id
+        ,AMOUNT__c,Unit_price__c,description__c
         ,tax_rate__c,tax__c,total__c,Bank_Account__r.name
         
          from Invoice__c where id=:invoice.id];
