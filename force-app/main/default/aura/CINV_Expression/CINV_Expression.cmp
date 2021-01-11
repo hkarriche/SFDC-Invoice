@@ -20,78 +20,13 @@
 
 <div class="slds-card slds-p-around_large slds">
 <div class="slds-expression">
-<h2 class="slds-expression__title">Conditions</h2>
-<div class="slds-expression__options">
-<div class="slds-form-element">
-<label class="slds-form-element__label" for="combobox-id-154">Take Action When</label>
-<div class="slds-form-element__control">
-<div class="slds-combobox_container">
-<div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="false" aria-haspopup="listbox" role="combobox">
-<div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
-<input type="text" class="slds-input slds-combobox__input slds-combobox__input-value" id="combobox-id-154" aria-controls="listbox-id-148" autocomplete="off" role="textbox" placeholder="Select…" readonly="" value="All Conditions Are Met" />
-<span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
-<lightning:icon iconName="utility:down" size="xx-small"></lightning:icon>
- <!--  <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
-    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
-    </svg> -->
-</span>
-</div>
-<div id="listbox-id-148" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
-<ul class="slds-listbox slds-listbox_vertical" role="presentation">
-<li role="presentation" class="slds-listbox__item">
-<div aria-selected="true" aria-checked="true" id="listbox-option-id-644" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-is-selected slds-has-focus" role="option">
-<span class="slds-media__figure slds-listbox__option-icon">
-<span class="slds-icon_container slds-icon-utility-check slds-current-color">
-    <lightning:icon iconName="utility:down" size="xx-small"></lightning:icon>
-    <!--  <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
-       <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
-       </svg> -->
-</span>
-</span>
-<span class="slds-media__body">
-<span class="slds-truncate" title="All Conditions Are Met">All Conditions Are Met</span>
-</span>
-</div>
-</li>
-<li role="presentation" class="slds-listbox__item">
-<div id="listbox-option-id-645" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
-<span class="slds-media__figure slds-listbox__option-icon"></span>
-<span class="slds-media__body">
-<span class="slds-truncate" title="Any Condition Is Met">Any Condition Is Met</span>
-</span>
-</div>
-</li>
-<li role="presentation" class="slds-listbox__item">
-<div id="listbox-option-id-646" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
-<span class="slds-media__figure slds-listbox__option-icon"></span>
-<span class="slds-media__body">
-<span class="slds-truncate" title="Custom Logic Is Met">Custom Logic Is Met</span>
-</span>
-</div>
-</li>
-<li role="presentation" class="slds-listbox__item">
-<div id="listbox-option-id-647" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
-<span class="slds-media__figure slds-listbox__option-icon"></span>
-<span class="slds-media__body">
-<span class="slds-truncate" title="Always (No Criteria)">Always (No Criteria)</span>
-</span>
-</div>
-</li>
-<li role="presentation" class="slds-listbox__item">
-<div id="listbox-option-id-648" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
-<span class="slds-media__figure slds-listbox__option-icon"></span>
-<span class="slds-media__body">
-<span class="slds-truncate" title="Formula Evaluates to True">Formula Evaluates to True</span>
-</span>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<h2 class="slds-expression__title">
+    <lightning:formattedRichText value="Build Your Order for : "></lightning:formattedRichText>
+</h2>
+
+        <div class="slds-expression__options">
+                <lightning:combobox name="logic" label="Send pizza when" value="all" options="{!v.logicOptions}"></lightning:combobox>
+        </div>
 <ul>
 <li class="slds-expression__row">
 <fieldset>
