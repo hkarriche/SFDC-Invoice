@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Piclist_Deploy__c</fullName>
+    <description>//HKA 12/04/2012 test deploy Picklist
+To remove After</description>
+    <externalId>false</externalId>
+    <label>Piclist Deploy</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Picklist</fullName>
+                <default>false</default>
+                <label>Picklist</label>
+            </value>
+            <value>
+                <fullName>deploy</fullName>
+                <default>false</default>
+                <label>deploy</label>
+            </value>
+            <value>
+                <fullName>to</fullName>
+                <default>false</default>
+                <label>to</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

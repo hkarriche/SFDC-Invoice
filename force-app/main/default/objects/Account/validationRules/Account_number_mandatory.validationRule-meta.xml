@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_number_mandatory</fullName>
+    <active>false</active>
+    <errorConditionFormula>LEN (AccountNumber )=0</errorConditionFormula>
+    <errorDisplayField>AccountNumber</errorDisplayField>
+    <errorMessage>mandatory</errorMessage>
+</ValidationRule>

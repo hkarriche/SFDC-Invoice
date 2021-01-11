@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>alll</fullName>
+    <active>false</active>
+    <errorConditionFormula>REGEX( AccountNumber , &quot;11&quot;)</errorConditionFormula>
+    <errorDisplayField>AccountNumber</errorDisplayField>
+    <errorMessage>REGEX( AccountNumber , &quot;213-[0-9]{8}&quot;)</errorMessage>
+</ValidationRule>

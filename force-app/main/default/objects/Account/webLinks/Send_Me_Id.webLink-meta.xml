@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Me_Id</fullName>
+    <availability>online</availability>
+    <description>HKA 02.09.2012 pour envoi de ID via webservice</description>
+    <displayType>link</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send Me Id</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/apex.js&quot;)}
+sforce.apex.execute(&quot;AP_66_SendEmail&quot;,&quot;SendEmail&quot;, {id:&quot;{!Account.AccountNumber}&quot;});
+window.alert(&quot;Account Id is sent.&quot; );</url>
+</WebLink>

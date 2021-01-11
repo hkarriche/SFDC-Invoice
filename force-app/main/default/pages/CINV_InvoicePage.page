@@ -48,14 +48,7 @@ standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" action="{!
         }
        
       
-        .TdEntete{background-color:#294d81 !important;color: white;}
-        .coverpage{font-size:24px;font-weight:normal;font-style:normal;line-height: 0.50in;color:#55585A;}
-        .table1 .tr01{border-bottom:0px solid #dddddd !important;text-align: left;padding-left: 40px !important;color:#00558A !important;}
-        .table1 .tr02{border-bottom:0px solid #dddddd !important;border-top:0px;text-align: left;padding-left: 40px !important;}
-        .table1 .tr03{border-top:0px solid #dddddd !important;text-align: left;padding-left: 0px !important;}
-        .table2 .tr001{border-bottom: 0px solid #dddddd !important;text-align: left;padding-left: 10px !important;vertical-align:bottom !important;margin-bottom: 0px !important;padding-bottom: 5px !important;}
-        .table2 .tr002{border-top: 0px solid #dddddd !important;text-align: left;padding-left: 10px !important;vertical-align:top !important;margin-top: 0px !important;padding-top: 0px !important;}
-        .footer p{font-family:Times New Roman !important;font-size:6.5pt;text-align: center;} 
+
             
         </style>
     </head>

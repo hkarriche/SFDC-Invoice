@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Type__c</fullName>
+    <description>Partner Type</description>
+    <externalId>false</externalId>
+    <label>Partner Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>AccountSource</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Platinuim</fullName>
+                <default>false</default>
+                <label>Platinuim</label>
+            </value>
+            <value>
+                <fullName>Golden</fullName>
+                <default>true</default>
+                <label>Golden</label>
+            </value>
+            <value>
+                <fullName>Silver</fullName>
+                <default>false</default>
+                <label>Silver</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Partner Referral</controllingFieldValue>
+            <valueName>Silver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Phone Inquiry</controllingFieldValue>
+            <controllingFieldValue>Purchased List</controllingFieldValue>
+            <valueName>Golden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Purchased List</controllingFieldValue>
+            <controllingFieldValue>Web Source</controllingFieldValue>
+            <valueName>Platinuim</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
