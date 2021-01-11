@@ -44,12 +44,8 @@
         
         </div>
         <div class="slds-col">
-        <div class="slds-form-element">
-        <label class="slds-form-element__label" for="text-input-id-56">Value</label>
-        <div class="slds-form-element__control">
-        <input type="text" id="text-input-id-56" class="slds-input" />
-        </div>
-        </div>
+            <lightning:input type="number" name="timeValue" label="Value"></lightning:input>
+          
         </div>
         <div class="slds-col slds-grow-none">
         <div class="slds-form-element">
