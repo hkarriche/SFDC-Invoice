@@ -1,4 +1,4 @@
-<aura:component>
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
 <div class="slds-expression">
 <h2 class="slds-expression__title">Conditions</h2>
 <div class="slds-expression__options">
@@ -10,7 +10,7 @@
 <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
 <input type="text" class="slds-input slds-combobox__input slds-combobox__input-value" id="combobox-id-154" aria-controls="listbox-id-148" autocomplete="off" role="textbox" placeholder="Select…" readonly="" value="All Conditions Are Met" />
 <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
-    <lightning:icon ></lightning:icon>
+<lightning:icon iconName="utility:down" size="xx-small"></lightning:icon>
  <!--  <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
     <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
     </svg> -->
@@ -22,9 +22,10 @@
 <div aria-selected="true" aria-checked="true" id="listbox-option-id-644" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-is-selected slds-has-focus" role="option">
 <span class="slds-media__figure slds-listbox__option-icon">
 <span class="slds-icon_container slds-icon-utility-check slds-current-color">
-<svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
-</svg>
+    <lightning:icon iconName="utility:down" size="xx-small"></lightning:icon>
+    <!--  <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+       <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+       </svg> -->
 </span>
 </span>
 <span class="slds-media__body">
@@ -87,9 +88,10 @@
 <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
 <input type="text" class="slds-input slds-combobox__input slds-combobox__input-value" id="combobox-id-155" aria-controls="listbox-id-149" autocomplete="off" role="textbox" placeholder="Select…" readonly="" value="Resource 1" />
 <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
-<svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
-<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
-</svg>
+    <lightning:icon iconName="utility:down" size="xx-small"></lightning:icon>
+    <!--  <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+       <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+       </svg> -->
 </span>
 </div>
 <div id="listbox-id-149" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
@@ -98,9 +100,10 @@
 <div aria-selected="true" aria-checked="true" id="listbox-option-id-649" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-is-selected slds-has-focus" role="option">
 <span class="slds-media__figure slds-listbox__option-icon">
 <span class="slds-icon_container slds-icon-utility-check slds-current-color">
-<svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
-</svg>
+    <lightning:icon iconName="utility:down" size="xx-small"></lightning:icon>
+    <!--  <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+       <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+       </svg> -->
 </span>
 </span>
 <span class="slds-media__body">
@@ -148,9 +151,10 @@
 <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
 <input type="text" class="slds-input slds-combobox__input" id="combobox-id-156" aria-controls="listbox-id-150" autocomplete="off" role="textbox" placeholder="Select…" readonly="" />
 <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
-<svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
-<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
-</svg>
+    <lightning:icon iconName="utility:down" size="xx-small"></lightning:icon>
+    <!--  <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+       <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+       </svg> -->
 </span>
 </div>
 <div id="listbox-id-150" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
@@ -207,9 +211,10 @@
 <span class="slds-form-element__label"> </span>
 <div class="slds-form-element__control">
 <button class="slds-button slds-button_icon slds-button_icon-border-filled" title="Delete Condition 1">
-<svg class="slds-button__icon" aria-hidden="true">
-<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
-</svg>
+    <lightning:icon iconName="utility:delete" size="xx-small"></lightning:icon>
+    <!--  <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+       <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+       </svg> -->
 <span class="slds-assistive-text">Delete Condition 1</span>
 </button>
 </div>
@@ -221,13 +226,15 @@
 </ul>
 <div class="slds-expression__buttons">
 <button class="slds-button slds-button_neutral">
-<svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
-<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
-</svg>Add Condition</button>
+<lightning:icon iconName="utility:add" size="xx-small"></lightning:icon>
+ <!--  <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+    </svg> -->Add Condition</button>
 <button class="slds-button slds-button_neutral">
-<svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
-<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
-</svg>Add Group</button>
+    <lightning:icon iconName="utility:add" size="xx-small"></lightning:icon>
+    <!--  <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+       <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+       </svg> -->Add Group</button>
 </div>
 </div>
 </aura:component>	
