@@ -1,0 +1,36 @@
+<apex:page showHeader="false" >
+<!--<style>
+.classis { 
+    font:12px Tahoma; 
+    color:#FFFFFF;
+    background-color:#3D3D3D;
+    font-weight:bold;
+    border:1px solid #000000;
+}
+</style>
+
+<h1 class="classis">{!$User.FirstName}’s Mileage Perspective</h1>
+<h1 class="classis">{!$User.FirstName}’s Mileage Perspective</h1>
+-->
+<apex:tabPanel >
+<apex:tab >Acceuil</apex:tab>
+<apex:tab onclick="A">Page1</apex:tab>
+<apex:tab >Page2</apex:tab>
+</apex:tabPanel>
+
+<!--apex:form >
+<apex:commandButton value="Algeria" />
+<apex:image />
+<apex:commandButton value="Tunisia" />
+<apex:commandButton value="Morrocco" style="classis"/>
+<apex:commandButton value="France" style="classis"/>
+</apex:form-->
+<!--apex:detail subject="{!Mileage__c.test__c}"></apex:detail-->
+<!--c:recordDisplay > </c:recordDisplay> 
+<apex:form >
+<apex:commandLink value="PAD Example"  onclick="PAD_lock()" oncomplete="PAD_unlock()" rendered="aText,PAD" action="!PAD_Log_Example"/>
+</apex:form>
+<apex:outputText id="aText" value="{!aTime}" ></apex:outputText-->
+<!--c:CMP02PAD ></c:CMP02PAD -->
+
+</apex:page>

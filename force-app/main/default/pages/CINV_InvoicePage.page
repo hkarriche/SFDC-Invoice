@@ -1,0 +1,214 @@
+<apex:page showHeader="false" standardController="Invoice__c"   renderAs="PDF" sidebar="false" 
+standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" action="{!SaveInvoice}" extensions="CINV_InvoiceController">  
+
+<head>
+        <style>
+          
+            @page {
+              
+            
+            
+           size: A4 landscape;
+               
+               
+                 
+                margin: 0.5cm 0.5cm 0.5cm 0.5cm;
+                
+               
+            }
+           
+            .page-break {
+                display:block;
+                page-break-after:always;
+            }
+          
+          body {
+                font-family:sans-serif !important; //Arial Unicode MS;
+                font-size:9pt;
+            }
+            table {
+                border-collapse: collapse;
+                 border: 1px solid  gray !important;
+                width: 100%;
+                font-size:8pt !important;
+            }
+
+        td, th {
+            /*border: 0.15px  solid gray;*/
+            text-align: left;
+            height: 20px;
+            line-height: 0.17in;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #0e0d0d;
+        }
+        body{
+            background-color:rgb(56, 226, 21);background-blend-mode:lighten ; 
+        }
+       
+      
+        .TdEntete{background-color:#294d81 !important;color: white;}
+        .coverpage{font-size:24px;font-weight:normal;font-style:normal;line-height: 0.50in;color:#55585A;}
+        .table1 .tr01{border-bottom:0px solid #dddddd !important;text-align: left;padding-left: 40px !important;color:#00558A !important;}
+        .table1 .tr02{border-bottom:0px solid #dddddd !important;border-top:0px;text-align: left;padding-left: 40px !important;}
+        .table1 .tr03{border-top:0px solid #dddddd !important;text-align: left;padding-left: 0px !important;}
+        .table2 .tr001{border-bottom: 0px solid #dddddd !important;text-align: left;padding-left: 10px !important;vertical-align:bottom !important;margin-bottom: 0px !important;padding-bottom: 5px !important;}
+        .table2 .tr002{border-top: 0px solid #dddddd !important;text-align: left;padding-left: 10px !important;vertical-align:top !important;margin-top: 0px !important;padding-top: 0px !important;}
+        .footer p{font-family:Times New Roman !important;font-size:6.5pt;text-align: center;} 
+            
+        </style>
+    </head>
+    <body>
+        <!--
+        <div class="Header" style="page-break-after:always;">
+            <!--<p class="" style="text-align: right;">NORDAQ </p>
+        </div>
+        <div class="footer" style="page-break-after:always;">
+            <p  style="font-size:10px;">www.nordaq.com </p>
+        </div> -->
+    <div class="content" >
+        
+    <div   >
+        <table style="height:100;width:100%;">
+            <tbody>
+             
+              
+               <tr>
+                    <td style=""></td>
+                    <td></td>
+                    <td ><p style="color:blue;text-align:left;font-size:29px;">INVOICE </p></td>
+                    <td></td>
+               
+              </tr>
+              <tr>
+                    <td  style="background-color:rgb(41, 159, 238);background-blend-mode:lighten ;" >Billing Adress</td>
+                    <td></td>
+                    <td ></td>
+                    <td></td>
+                   
+              </tr>
+              <tr>
+                    <td style="width:40%;"> Bank Name: Birsa <br/>
+                        Bank Address: California Agency<br/>
+                        IBAN: 0020085744310<br/>
+                        Account No.: 00541287479<br/>
+                        Beneficiary Name: Hakim Karriche<br/>
+                        Beneficiary Address: Azib Ouhaddad Ouaguenoun Tizi Ouzou<br/>
+                        SWIFT: BZEKILIM<br/>
+                        </td>
+                    <td></td>
+                    <td ></td>
+                    <td></td>
+                 
+              </tr>
+              <tr>
+                <td style="background-color:rgb(41, 159, 238);">Bill To</td>
+                <td></td>
+                <td style="background-color:rgb(41, 159, 238);" >Invoice #</td>
+                <td style="background-color:rgb(41, 159, 238);text-align:center;">Date</td> 
+                
+          </tr>
+          <tr>
+            <td> {!invoice.Bill_To__r.name}<br/>
+                {!invoice.Bill_To__r.BillingStreet},{!invoice.Bill_To__r.BillingPostalCode} {!invoice.Bill_To__r.BillingCity}<br/>
+                {!invoice.Bill_To__r.BillingCountry} <br/>
+                Phone : {!invoice.Bill_To__r.Phone}
+
+            </td>
+            <td></td>
+            <td >{!invoice.Name}</td>
+            <td style="text-align:center;"><apex:outputText value="{0, date, d'/'MM'/'yyyy}">
+                <apex:param value="{!invoice.date__c}" /> 
+            </apex:outputText></td>
+            
+         </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td ></td>
+            <td></td>
+           
+         </tr>
+      
+        <tr style="background-color:rgb(41, 159, 238);" >
+            <td>Description</td>
+            <td>Days</td>
+            <td >Unit Price</td>
+            <td style="text-align:center;">AMOUNT </td>
+           
+        </tr>
+        <tr>
+            <td> <apex:outputText value="{!invoice.description__c}" escape="false" ></apex:outputText> </td>
+            <td> {!invoice.days__c}</td>
+            <td >{!invoice.unit_price__c}</td>
+            <td style="text-align:center;">{!invoice.amount__c}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td ></td>
+            <td></td>
+           
+        </tr>
+      
+        <tr>
+            <td></td>
+            <td style="background-color:#cfe2f3">TAX RATE </td>
+            <td style="background-color:#c9daf8"></td>
+            <td style="background-color:#c9daf8;text-align:center;">{!invoice.tax_rate__c}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td style="background-color:#cfe2f3">TAX </td>
+            <td style="background-color:#c9daf8"></td>
+            <td style="background-color:#c9daf8;text-align:center;">{!invoice.tax__c}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td style="background-color:#cfe2f3">TOTAL (€) </td>
+            <td style="background-color:#c9daf8"></td>
+            <td style="background-color:#c9daf8;text-align:center;">{!invoice.total__c}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td ></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td ></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            
+            <td colspan="4" style="text-align:center"> If you have any questions about this invoice, please contact </td>
+            
+          
+            
+        </tr>
+        <tr>
+            
+            <td colspan="4" style="text-align:center">[hakim karriche, 00213553091135, karriche.hak@gmail.com]</td>
+            
+           
+            
+        </tr>
+      
+      
+
+            </tbody>
+        </table> 
+       
+        </div>   
+    </div>
+    </body>
+</apex:page>
