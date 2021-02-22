@@ -82,16 +82,16 @@ standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" action="{!
                    
               </tr>
               <tr>
-                    <td style="width:40%;"> Bank Name: Birsa <br/>
-                        Bank Address: California Agency<br/>
-                        IBAN: 0020085744310<br/>
-                        Account No.: 00541287479<br/>
+                    <td style="width:40%;"> Bank Name: "Paysera LT", UAB <br/>
+                        Bank Address: Pilaitės pr. 16, LT-04352, Vilnius, Lithuania<br/>
+                        IBAN: LT923500010008565805<br/>
+                        Bank Code.: 35000<br/>
                         Beneficiary Name: Hakim Karriche<br/>
                         Beneficiary Address: Azib Ouhaddad Ouaguenoun Tizi Ouzou<br/>
-                        SWIFT: BZEKILIM<br/>
+                        SWIFT: EVIULT2VXXX<br/>
                         </td>
                     <td></td>
-                    <td >{!invoice.Bill_To__r.Id}</td>
+                    <td ></td>
                     <td></td>
                  
               </tr>
