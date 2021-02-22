@@ -26,7 +26,7 @@ public with sharing class CINV_InvoiceController {
     
                 if( ApexPages.currentPage().getParameters().containsKey('uploadMode')) return null;
     
-                PageReference PDFExportedPage = new PageReference('/apex/CINV_InvoicePage?id='+ ApexPages.currentPage().getParameters().get('id')+'&uploadMode=true');
+                PageReference PDFExportedPage = new PageReference('/apex/CINV_InvoicePage1?id='+ ApexPages.currentPage().getParameters().get('id')+'&uploadMode=true');
         
                 Blob pdfContent = blob.valueOf('Unit.Test');
                 
